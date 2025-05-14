@@ -132,6 +132,14 @@ public class CartPage {
     public void Choosing_Nexus_6(){
         driver.findElement(Nexus_6).click();
     }
+    public String NokiaPrice(){
+        String price = driver.findElement(Nokia_lumia_1520_Price).getText();
+        return price;
+    }
+    public String SamsungPrice(){
+        String price = driver.findElement(Nokia_lumia_1520_Price).getText();
+        return price;
+    }
     public String Nokia_lumia_1520_Price(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(Nokia_lumia_1520_Price));
         return driver.findElement(Nokia_lumia_1520_Price).getText();
